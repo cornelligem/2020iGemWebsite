@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/*** Nav Bar Styling ***/
+
+.navbar li, a {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  color: #333333;
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 20px 3.5%;
+}
+
+.logo {
+  cursor: pointer;
+  margin-right: auto;
+  width: 175px;
+  padding-bottom: 50px;
+}
+
+.navbar_links {
+  list-style: none;
+}
+
+.navbar_links li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.navbar_links li a {
+  transition: all 0.3s ease 0s;
+}
+
+.navbar_links li a:hover {
+  color: #607D8B;
+}
+
+/*** Home Page Banner Style ***/
+
+.home-banner-container {
+  width: 100%;
+  position: relative;
+  margin: -55px 0;
+}
+
+/* Hide the images by default */
+.home-slides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}*/
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 8px;
+  width: 8px;
+  margin: 50px 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
