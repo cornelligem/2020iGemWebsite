@@ -8,13 +8,14 @@
 
 h1 {
 	font-family: 'Raleway';
-  font-size: 60px;
+  font-weight: bold;
+  font-size: 35px;
 }
 
 h2, h4, h5{
 	font-family: 'Raleway';
   color:#616161;
-  font-size: 36px;
+  font-size: 30px;
 }
 
 h3 {
@@ -30,7 +31,7 @@ h4 {
 }
 
 h6 {
-  font-family: 'proximanova-light';
+  font-family: 'Raleway';
   color:#ffffff;
   font-size: 36px;
 }
@@ -221,6 +222,39 @@ header {
   to {opacity: 1}
 }
 
+/*** Initial Tagline Homepage ***/
+.homePageTag {
+  margin-left: 100px;
+  height: 150px;
+}
+
+.homePageTag p {
+  font-family: 'Raleway';
+  color:#616161;
+  font-size: 30px;
+}
+
+/*** Homepage Current Work***/
+.ourCurrentWork {
+  margin-top: -75px;
+  background-color: #F9F9F9;
+  padding: 50px 100px;
+  height: 500px;
+}
+
+.ourCurrentWork img {
+  width: 400px;
+}
+
+.currentWorkImg {
+  width: 50%;
+  float:left;
+}
+
+.currentWorkText {
+  width: 50%;
+  float:right;
+}
 
 /***----------------------------------------PAST PROJECTS & ACHIEVEMENTS----------------------------------------***/
 .circle {
@@ -232,6 +266,10 @@ header {
 	background: red;
 }
 
+.pastProjects {
+  padding: 50px 100px;
+
+}
 
 /***----------------------------------------ACCORDION----------------------------------------***/
 /*Source: http://www.cssscript.com/demo/pure-css-responsive-horizontal-accordion/ */
@@ -447,6 +485,12 @@ header {
 
 /* Donate Section */
 
+.donateSection {
+  background-color: #F9F9F9;
+  padding: 50px 100px;
+  height: 250px;
+}
+
 .button {
   background-color: #C7D0D4;
   border: none;
@@ -458,19 +502,23 @@ header {
   font-size: 16px;
 }
 
-/* Sponsors */
 
 /***----------------------------------------SPONSORS----------------------------------------***/
+/*
 .panel-heading .accordion-toggle:after {
     /* symbol for "opening" panels */
-    font-family: 'Glyphicons Halflings';  /* essential for enabling glyphicon */
-    content: "\e114";    /* adjust as needed, taken from bootstrap.css */
-    float: right;        /* adjust as needed */
-    color: grey;         /* adjust as needed */
-}
+/*    font-family: 'Glyphicons Halflings';  /* essential for enabling glyphicon */
+/*    content: "\e114";    /* adjust as needed, taken from bootstrap.css */
+/*    float: right;        /* adjust as needed */
+/*    color: grey;         /* adjust as needed */
+/*}
 .panel-heading .accordion-toggle.collapsed:after {
     /* symbol for "collapsed" panels */
-    content: "\e080";    /* adjust as needed, taken from bootstrap.css */
+  /*  content: "\e080";    /* adjust as needed, taken from bootstrap.css */
+/*} */
+
+.sponsors {
+  padding: 50px 100px;
 }
 
 .panel{
@@ -541,9 +589,10 @@ header {
 
 /***----------------------------------------FOOTER----------------------------------------***/
 .footer {
-	height: 150px;
+	height: 200px;
   background-color: #C7D0D4;
 	padding-top: 50px;
+  margin-top: 150px;
 }
 
 .footer div{
@@ -585,7 +634,7 @@ header {
 
 .credit{
 	margin: 0 auto;
-	margin-top: 20px;
+	margin-top: 40px;
   margin-bottom: 15px;
 	font: "Raleway";
 	color: #333333;

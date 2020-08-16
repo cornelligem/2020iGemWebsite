@@ -77,34 +77,3 @@ function checkVisible( elm, evalType ) {
     if (evalType === "visible") return ((y < (vpH + st)) && (y > (st - elementHeight)));
     if (evalType === "above") return ((y < (vpH + st)));
 }
-
-function clearNavbar(turnOn){
-    var elems = $('.navbar-nav')[0].children;
-    for(var i = 0; i<elems.length; i++){
-        var elem = elems[i].children[0];
-        if (elem.id == turnOn){
-            elem.className = 'current-section-header';
-        } else{
-            elem.className = '';
-        }
-    }
-}
-
-function updateNavbar(){
-    var wh = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
-    var pos = $(document).scrollTop() + 80 + wh * 0.3;
-    if (pos < $('#subteams').offset().top){
-        clearNavbar('navbar-aboutus');
-    }
-    else if (pos < $('#team').offset().top){
-        clearNavbar('navbar-subteams');
-    }
-    else if (pos < $('#recruiting').offset().top){
-        clearNavbar('navbar-team');
-    }
-    else if (pos < $('#sponsors').offset().top){
-        clearNavbar('navbar-recruiting');
-    } else {
-        clearNavbar('navbar-sponsors');
-    }
-}
