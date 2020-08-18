@@ -364,6 +364,68 @@ header {
     	font-family: proximanova-bold;
 	}
 
+/** ---------------------------------- ABOUT PAGE ---------------------------- **/
+
+.aboutIntro{
+	margin-left: auto;
+	margin-right: auto;
+	padding: 50px 100px;
+}
+
+/* What is Synthetic Biology? */
+
+.syntheticBiology {
+	margin-top: -75px;
+	padding: 50px 100px;
+	height: 500px;
+  }
+  
+  .syntheticBiology h1{
+	margin-bottom:40px; 
+  }
+
+  .syntheticBiology img {
+	width: 400px;
+  }
+  
+  .syntheticBiologyImage {
+	width: 50%;
+	float: right;
+  }
+  
+  .syntheticBiologyText {
+	width: 50%;
+	float:left;
+  }
+
+/* iGEM Giant Jamboree */
+
+.giantJamboree {
+	margin-top: -75px;
+	padding: 50px 100px;
+	height: 500px;
+  }
+  
+  .giantJamboree h1{
+	  margin-bottom:40px; 
+  }
+
+  .giantJamboree img {
+	width: 400px;
+  }
+  
+  .giantJamboreeImage {
+	width: 50%;
+	float:left;
+  }
+  
+  .giantJamboreeText {
+	width: 50%;
+	float:right;
+  }
+
+
+
 /*	.accordion ul li:nth-child(5) { background-image: url("resources/placeholders/dog.jpg"); }
 
 	.accordion ul li:nth-child(6) { background-image: url("resources/placeholders/dog.jpg"); }
