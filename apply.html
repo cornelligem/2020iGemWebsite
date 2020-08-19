@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="apple-touch-icon" sizes="180x180" href="resources/favicons/apple-touch-icon.png">
+	<link rel="icon" type="image/png" href="resources/favicons/favicon-32x32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="resources/favicons/favicon-16x16.png" sizes="16x16">
+	<link rel="manifest" href="resources/favicons/manifest.json">
+	<link rel="mask-icon" href="resources/favicons/safari-pinned-tab.svg" color="#607d8b">
+	<meta name="theme-color" content="#ffffff">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,500' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/styles.css">
+
+    <!--For accordion styling-->
+	<link href="http://www.cssscript.com/wp-includes/css/sticky.css" rel="stylesheet" type="text/css">
+
+	<title>Cornell iGEM</title>
+</head>
+<body>
+	<!--/*****------------------------------*** NAVIGATION BAR ***------------------------------*****/ -->
+<header>
+  <img class="logo" src="images/logo.png" alt="logo">
+  <nav class="navbar">
+      <ul class="navbar_links">
+				<li><a href="index.html">HOME</a></li>
+				<li><a href="about.html">ABOUT</a></li>
+        <li><a href="team.html">TEAM</a></li>
+        <li><a class="bold" href="apply.html">APPLY</a></li>
+      </ul>
+    </nav>
+</header>
+
+<div class="home-banner-container">
+  <div class="home-slides">
+    <img src="images/apply.png" style="width:100%">
+  </div>
+</div>
+<br>
+
+<!-- Apply Information -->
+
+<div class="applyInfo">
+    <p class="bold teamInfo">
+    Our team is made from students from every year, every college, and every major. From gene-splicing in wet-lab to pursuing business endeavors
+    to organizing outreach events, bright passionate students make this team thrive.
+    </p>
+
+    <p >We recruit in the fall. Below is the breakdown of what a year in on <b>Cornell IGEM</b> looks like:</p>
+</div>
+
+<div class="schedule">
+    <p><b>Spring:</b> brainstorm next project and new member training (2 credits, 6-8 hrs/week)<br>
+    <b>Summer:</b> on-campus project work (20+ hrs/week), all new team members (except for business and wiki subteams) are expected to stay in Ithaca over the summer<br>
+    <b>Fall:</b> finish project and compete at iGEM jamborees (3-4 credits, 12-16 hrs/week)</p>
+</div>
+
+<div class="applyInfo">
+    <p class="recruit bold">We are not currently recruiting, but please see the section below for an example of what one of our applications looks like. Stay tuned for Fall 2020 recruitment!</p>
+    <p class="lastline">If you have any questions, feel free to send them to <u>cornelligem@gmail.com</u>.</p>
+</div>
+
+<!-- Meet the SubTeams -->
+<div class="subteams">
+    <ul id="subteamNav" class="nav nav-justified">
+        <li onclick="selectSubteam('general', this)" class="active"><a>General</a></li>
+        <li onclick="selectSubteam('wetLabTeam', this)"><a>Wet Lab</a></li>
+        <li onclick="selectSubteam('productTeam', this)"><a>Product Development</a></li>
+        <li onclick="selectSubteam('policyTeam', this)"><a>Policy and Practices</a></li>
+        <li onclick="selectSubteam('businessTeam', this)"><a>Business</a></li>
+        <li onclick="selectSubteam('wikiTeam', this)"><a>Wiki</a></li>
+    </ul>
+
+    <div class="general">
+        <p>
+            General Short Answer Prompts:
+        </p>
+        <p>
+            Here is your chance to really stand out from other applicants by showing us your skills, talent, potential, and personality. So write away, keep it interesting, and impress us! Links to past projects can be found on our website: https://igem.engineering.cornell.edu
+        </p>
+            Taking past iGEM projects into consideration, explain (1) why you are a good fit for this team, and (2) why iGEM is a good fit for you. [400 Word Limit]
+        <p>
+            Tell us something cool about yourself.
+        </p>
+    </div>
+
+    <div class="wetLabTeam hide">
+        <p>
+            Wet Lab Short Answer Prompts:
+        </p>
+        <p>
+            Here is your chance to really stand out from other applicants by showing us your skills, talent, potential, and personality. So write away, keep it interesting, and impress us! Links to past projects can be found on our website: https://igem.engineering.cornell.edu
+        </p>
+            Taking past iGEM projects into consideration, explain (1) why you are a good fit for this team, and (2) why iGEM is a good fit for you. [400 Word Limit]
+        <p>
+            Tell us something cool about yourself.
+        </p>
+    </div>
+
+    <div class="productTeam hide">
+        <p>
+            Product Development Short Answer Prompts:
+        </p>
+        <p>
+            Here is your chance to really stand out from other applicants by showing us your skills, talent, potential, and personality. So write away, keep it interesting, and impress us! Links to past projects can be found on our website: https://igem.engineering.cornell.edu
+        </p>
+            Taking past iGEM projects into consideration, explain (1) why you are a good fit for this team, and (2) why iGEM is a good fit for you. [400 Word Limit]
+        <p>
+            Tell us something cool about yourself.
+        </p>
+    </div>
+
+    <div class="policyTeam hide">
+        <p>
+            Policy and Practices Short Answer Prompts:
+        </p>
+        <p>
+            Here is your chance to really stand out from other applicants by showing us your skills, talent, potential, and personality. So write away, keep it interesting, and impress us! Links to past projects can be found on our website: https://igem.engineering.cornell.edu
+        </p>
+            Taking past iGEM projects into consideration, explain (1) why you are a good fit for this team, and (2) why iGEM is a good fit for you. [400 Word Limit]
+        <p>
+            Tell us something cool about yourself.
+        </p>
+    </div>
+
+
+    <div class="businessTeam hide">
+        <p>
+            Business Short Answer Prompts:
+        </p>
+        <p>
+            Here is your chance to really stand out from other applicants by showing us your skills, talent, potential, and personality. So write away, keep it interesting, and impress us! Links to past projects can be found on our website: https://igem.engineering.cornell.edu
+        </p>
+            Taking past iGEM projects into consideration, explain (1) why you are a good fit for this team, and (2) why iGEM is a good fit for you. [400 Word Limit]
+        <p>
+            Tell us something cool about yourself.
+        </p>
+    </div>
+
+    <div class="wikiTeam hide">
+        <p>
+            Wiki Short Answer Prompts:
+        </p>
+        <p>
+            Here is your chance to really stand out from other applicants by showing us your skills, talent, potential, and personality. So write away, keep it interesting, and impress us! Links to past projects can be found on our website: https://igem.engineering.cornell.edu
+        </p>
+            Taking past iGEM projects into consideration, explain (1) why you are a good fit for this team, and (2) why iGEM is a good fit for you. [400 Word Limit]
+        <p>
+            Tell us something cool about yourself.
+        </p>
+    </div>
+
+</div>
+<script>
+    function selectSubteam(teamName, element){
+        document.getElementsByClassName("general")[0].classList.add("hide");
+        document.getElementsByClassName("wetLabTeam")[0].classList.add("hide");
+        document.getElementsByClassName("productTeam")[0].classList.add("hide");
+        document.getElementsByClassName("policyTeam")[0].classList.add("hide");
+        document.getElementsByClassName("businessTeam")[0].classList.add("hide");
+        document.getElementsByClassName("wikiTeam")[0].classList.add("hide");
+        document.getElementsByClassName(teamName)[0].classList.remove("hide");
+
+        var navItems = document.getElementById("subteamNav").getElementsByTagName("li");
+        for (var i = 0; i<navItems.length; i++){
+            navItems[i].classList.remove("active");
+        }
+        element.classList.add("active");
+    }
+</script>
+
+    <!--/*****------------------------------*** FOOTER ***------------------------------*****/ -->
+
+      <div class="footer">
+  	<div class="container">
+  		<ul class='contact-us'>
+  			<li>
+  				<img src="images/footer/em.png" alt="email">
+  				<a href="mailto:cornelligem@gmail.com">cornelligem@gmail.com</a>
+  			</li>
+  			<li>
+  				<img src="images/footer/fb.png" alt="facebook">
+  				<a href="http://facebook.com/cornelligem">facebook.com/cornelligem</a>
+  			</li>
+  			<li>
+  				<img src="images/footer/tw.png" alt="twitter">
+  				<a href="http://twitter.com/cugem">@CUGEM</a>
+  			</li>
+  			<li>
+  				<img src="images/footer/instagram.png" alt="instagram">
+  				<a href="https://www.instagram.com/cugem/">@CUGEM</a>
+  			</li>
+  		</ul>
+  	</div>
+          <div class='credit'>
+              <p>© Cornell iGEM | Created By: Karen Zhan, Anish Navada | Built upon the work of: Tennyson Bardwell, Rishabh Singh, Amanda Ong</p>
+          </div>
+      </div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<script src="js/script.js"></script>
+	<script src="http://www.youtube.com/iframe_api"></script>
+</body>
+</html>
