@@ -367,8 +367,6 @@ header {
 /** ---------------------------------- ABOUT PAGE ---------------------------- **/
 
 .aboutIntro{
-	margin-left: auto;
-	margin-right: auto;
 	padding: 50px 100px;
 }
 
@@ -386,6 +384,7 @@ header {
 
   .syntheticBiology img {
 	width: 400px;
+	float: right; 
   }
   
   .syntheticBiologyImage {
@@ -424,7 +423,28 @@ header {
 	float:right;
   }
 
+/* Subteam  */
+  .subteams{
+	padding: 50px 100px;
+  }
 
+  .subteams .nav{
+	  margin-top: 40px;
+  }
+
+  .subteams .active{
+	text-decoration: underline; 
+	background-color: #fff;
+  }
+
+  .subteams p{
+	  margin-top: 20px; 
+	  margin-bottom: 20px;
+  }
+
+  .subteams .hide{
+	  display: none; 
+  }
 
 /*	.accordion ul li:nth-child(5) { background-image: url("resources/placeholders/dog.jpg"); }
 

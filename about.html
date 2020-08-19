@@ -68,6 +68,8 @@
     </p>
 </div>
 
+<!-- Synthetic Biology -->
+
 <div class = "syntheticBiology">
     <h1>
         What is Synthetic Biology? </h1>
@@ -87,6 +89,7 @@ magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullam
     </div>
 </div>
 
+<!-- Giant Jamboree -->
 
 <div class = "giantJamboree">
     <h1>
@@ -104,25 +107,118 @@ Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deseru
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore 
 magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullam
         </p>
-    </div>
+    </div>  
 </div>
-    <script>
-        (function(document){
-            var div = document.getElementById('toggle');
-            var icon = document.getElementById('icon');
-            var open = false;
 
-            div.addEventListener('click', function(){
-                if(open){
-                icon.className = 'arrow';
-                } else{
-                icon.className = 'arrow open';
-                }
+<!-- Meet the SubTeams -->
+<div class="subteams">
+    <h1>Meet Our Subteams</h1>
+    <ul id="subteamNav" class="nav nav-justified">
+        <li onclick="selectSubteam('wetLabTeam', this)" class="active"><a>Wet Lab</a></li>
+        <li onclick="selectSubteam('productTeam', this)"><a>Product Development</a></li>
+        <li onclick="selectSubteam('policyTeam', this)"><a>Policy and Practices</a></li>
+        <li onclick="selectSubteam('businessTeam', this)"><a>Business</a></li>
+        <li onclick="selectSubteam('wikiTeam', this)"><a>Wiki</a></li>
+    </ul>
 
-                open = !open;
-            });
-        })(document);
-    </script>
+    <div class="wetLabTeam">
+        <p>
+            Wet Lab Fake Paragraph 1 - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore 
+    magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
+    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+
+        <p>
+            Wet Lab Fake Paragraph 2 - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore 
+    magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
+    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+    </div>
+
+    <div class="productTeam hide">
+        <p>
+            Product Development Fake Paragraph 1 - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore 
+    magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
+    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+
+        <p>
+            Product Development Fake Paragraph 2 -Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore 
+    magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
+    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+    </div>
+
+    <div class="policyTeam hide">
+        <p>
+            Policy and Practice Fake Paragraph 1 - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore 
+    magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
+    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+
+        <p>
+            Policy and Practices Fake Paragraph 2 - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore 
+    magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
+    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+    </div>
+
+
+    <div class="businessTeam hide">
+        <p>
+            Business Team Fake Paragraph 1 - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore 
+    magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
+    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+
+        <p>
+            Business Team Fake Paragraph 2 - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore 
+    magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
+    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+    </div>
+
+    <div class="wikiTeam hide">
+        <p>
+            Wiki Team Fake Paragraph 1 - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore 
+    magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
+    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+
+        <p>
+            Wiki Team Fake Paragraph 2 - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore 
+    magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
+    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+    </div>
+
+</div>
+<script>
+    function selectSubteam(teamName, element){
+        document.getElementsByClassName("wetLabTeam")[0].classList.add("hide");  
+        document.getElementsByClassName("productTeam")[0].classList.add("hide"); 
+        document.getElementsByClassName("policyTeam")[0].classList.add("hide"); 
+        document.getElementsByClassName("businessTeam")[0].classList.add("hide"); 
+        document.getElementsByClassName("wikiTeam")[0].classList.add("hide"); 
+        document.getElementsByClassName(teamName)[0].classList.remove("hide");  
+
+        var navItems = document.getElementById("subteamNav").getElementsByTagName("li");
+        for (var i = 0; i<navItems.length; i++){
+            navItems[i].classList.remove("active");
+        }
+        element.classList.add("active"); 
+    }
+</script>
 
     <!--/*****------------------------------*** FOOTER ***------------------------------*****/ -->
 
