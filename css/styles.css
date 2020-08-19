@@ -124,7 +124,7 @@ header {
   padding: 20px 3.5%;
 }
 
-.logo {
+.logo img {
   cursor: pointer;
   margin-right: auto;
   width: 175px;
@@ -377,21 +377,21 @@ header {
 	padding: 50px 100px;
 	height: 500px;
   }
-  
+
   .syntheticBiology h1{
-	margin-bottom:40px; 
+	margin-bottom:40px;
   }
 
   .syntheticBiology img {
 	width: 400px;
-	float: right; 
+	float: right;
   }
-  
+
   .syntheticBiologyImage {
 	width: 50%;
 	float: right;
   }
-  
+
   .syntheticBiologyText {
 	width: 50%;
 	float:left;
@@ -404,20 +404,20 @@ header {
 	padding: 50px 100px;
 	height: 500px;
   }
-  
+
   .giantJamboree h1{
-	  margin-bottom:40px; 
+	  margin-bottom:40px;
   }
 
   .giantJamboree img {
 	width: 400px;
   }
-  
+
   .giantJamboreeImage {
 	width: 50%;
 	float:left;
   }
-  
+
   .giantJamboreeText {
 	width: 50%;
 	float:right;
@@ -433,17 +433,17 @@ header {
   }
 
   .subteams .active{
-	text-decoration: underline; 
+	text-decoration: underline;
 	background-color: #fff;
   }
 
   .subteams p{
-	  margin-top: 20px; 
+	  margin-top: 20px;
 	  margin-bottom: 20px;
   }
 
   .subteams .hide{
-	  display: none; 
+	  display: none;
   }
 
 /*	.accordion ul li:nth-child(5) { background-image: url("resources/placeholders/dog.jpg"); }
