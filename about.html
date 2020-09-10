@@ -3,18 +3,22 @@
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<link rel="apple-touch-icon" sizes="180x180" href="resources/favicons/apple-touch-icon.png">
-	<link rel="icon" type="image/png" href="resources/favicons/favicon-32x32.png" sizes="32x32">
-	<link rel="icon" type="image/png" href="resources/favicons/favicon-16x16.png" sizes="16x16">
-	<link rel="manifest" href="resources/favicons/manifest.json">
-	<link rel="mask-icon" href="resources/favicons/safari-pinned-tab.svg" color="#607d8b">
+	<link rel="apple-touch-icon" sizes="180x180" href="images/logo/apple-touch-icon.png">
+	<link rel="icon" type="image/png" href="images/logo/favicon-32x32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="images/logo/favicon-16x16.png" sizes="16x16">
+	<link rel="manifest" href="images/logo/manifest.json">
+	<link rel="mask-icon" href="images/logo/safari-pinned-tab.svg" color="#607d8b">
 	<meta name="theme-color" content="#ffffff">
 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-	<link href='https://fonts.googleapis.com/css?family=Roboto:400,500' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="css/styles.css">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+
 
     <!--For accordion styling-->
 	<link href="http://www.cssscript.com/wp-includes/css/sticky.css" rel="stylesheet" type="text/css">
@@ -22,234 +26,269 @@
 	<title>Cornell iGEM</title>
 </head>
 <body>
-	<!--/*****------------------------------*** NAVIGATION BAR ***------------------------------*****/ -->
-	<header>
-	  <img class="logo" src="images/logo.png" alt="logo">
-	  <nav class="navbar">
-	      <ul class="navbar_links">
-					<li><a href="index.html">HOME</a></li>
-	        <li><a class="current" href="about.html">ABOUT</a></li>
-	        <li><a href="team.html">TEAM</a></li>
-	        <li><a href="apply.html">APPLY</a></li>
-	      </ul>
-	    </nav>
-	</header>
+  <!--/************************* NAVIGATION BAR ************************************/ -->
 
-<div class="home-banner-container">
-  <div class="home-slides">
-    <img src="images/about1.png" style="width:100%">
-  </div>
-  <div class="home-slides">
-    <img src="images/about2.png" style="width:100%">
-  </div>
-  <!-- Next and previous buttons -->
-  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-  <a class="next" onclick="plusSlides(1)">&#10095;</a>
-</div>
-<br>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-<!-- The dots/circles -->
-<div style="text-align:center">
-  <span class="dot" onclick="currentSlide(1)"></span>
-  <span class="dot" onclick="currentSlide(2)"></span>
-</div>
+<nav class="navbar fixed-top">
+        <span class="navbar-toggle" id="js-navbar-toggle">
+            <i class="fa fa-bars"></i>
+        </span>
+        <a href="index.html" class="logo"><img src="images/logo/logo.png" width="200" alt="logo"></a>
+        <ul class="main-nav" id="js-menu">
+            <li>
+                <a href="index.html" class="nav-links">Home</a>
+            </li>
+            <li>
+                <a href="about.html" class="nav-links activenav">About</a>
+            </li>
+            <li>
+                <a href="team.html" class="nav-links">Team</a>
+            </li>
+            <li>
+                <a href="apply.html" class="nav-links">Apply</a>
+            </li>
+        </ul>
+    </nav>
 
-<!-- First About Paragraph -->
+		<!--/****************************** BANNER *****************************************/ -->
 
-<div class="aboutIntro">
-    <p>
-        The Cornell iGEM Team is an award-winning synthetic biology research team
-        comprised of 30 undergraduate students. The team is comprised of five subteams:
-        Wet Lab, Product Development, Policy and Practices, Business, and Wiki/Design.
-        The team works throughout the school year and summer to solve local and global
-        problems related to medical applications, environmental concerns, and human and
-        animal health. We compete against 300+ multidisciplinary teams from all around the
-        world at the iGEM Giant Jamboree, hosted annually by the International Genetically
-        Engineered Machine (iGEM) Foundation.
-    </p>
-</div>
+		<div class="home-banner-large-container">
+		<div class="home-banner-container">
+		  <div class="home-slides">
+		      <img src="images/banners/about1.png" style="width:100%">
+		  </div>
+		  <div class="home-slides">
+		      <img src="images/banners/about2.png" style="width:100%">
+		  </div>
 
-<!-- Synthetic Biology -->
+		  <!-- Next and previous buttons -->
+		  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+		</div>
 
-<div class = "syntheticBiology">
-    <h1>
-        What is Synthetic Biology? </h1>
-    <div class="syntheticBiologyImage">
-        <img src="images/currentwork.jpg" alt="Our Current Work">
-    </div>
-    <div class="syntheticBiologyText">
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		  <br>
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullam
-        </p>
-    </div>
+		  <!-- The dots/circles -->
+		  <div style="text-align:center">
+		    <span class="dot" onclick="currentSlide(1)"></span>
+		    <span class="dot" onclick="currentSlide(2)"></span>
+		  </div>
+		</div>
+
+
+
+
+		<!--/****************************** ABOUT *****************************************/ -->
+
+<div class="container about-intro">
+	<p>
+		The Cornell iGEM Team is an award-winning synthetic biology research team comprised of 30 undergraduate students. The team is comprised of five subteams: Wet Lab, Product Development, Policy and Practices, Business, and Wiki/Design. The team works throughout the school year and summer to solve local and global problems related to medical applications, environmental concerns, and human and animal health. We compete against 300+ multidisciplinary teams from all around the world at the iGEM Giant Jamboree, hosted annually by the International Genetically Engineered Machine (iGEM) Foundation.
+
+</p>
 </div>
 
-<!-- Giant Jamboree -->
+		<!--/****************************** SYNTHETIC BIOLOGY *****************************************/ -->
 
-<div class = "giantJamboree">
-    <h1>
-        iGem Giant Jamboree </h1>
-    <div class="giantJamboreeImage">
-        <img src="images/currentwork.jpg" alt="Our Current Work">
-    </div>
-    <div class="giantJamboreeText">
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		<div class="container synBio">
+		  <h1>
+		    What is Synthetic Biology? </h1>
+		    <p>
+					Synthetic biology is the field in which scientists redesign and repurpose machinery naturally found in the biological world to achieve a man-driven goal.
+					Some famous examples of synthetic biology that have changed the world as we know it:
+				</p>
+				<ul>
+				<li>	1978: Bacteria were engineered to mass-produce human insulin for Type I diabetics,
+					which eliminated the need for costly harvest from livestock and allergic reactions to non-human insulin. </li>
+				<li>	2000: With Vitamin A deficiencies in mind in the developing world, golden rice is a variety of
+					rice genetically engineered to contain fortified carotene, a precursor of the essential vitamin A. </li>
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullam
-        </p>
-    </div>
-</div>
-
-<!-- Meet the SubTeams -->
-<div class="subteams">
-    <h1>Meet Our Subteams</h1>
-    <ul id="subteamNav" class="nav nav-justified">
-        <li onclick="selectSubteam('wetLabTeam', this)" class="active"><a>Wet Lab</a></li>
-        <li onclick="selectSubteam('productTeam', this)"><a>Product Development</a></li>
-        <li onclick="selectSubteam('policyTeam', this)"><a>Policy and Practices</a></li>
-        <li onclick="selectSubteam('businessTeam', this)"><a>Business</a></li>
-        <li onclick="selectSubteam('wikiTeam', this)"><a>Wiki</a></li>
-    </ul>
-
-    <div class="wetLabTeam">
-        <p>
-            Wet Lab Fake Paragraph 1 - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-    magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-
-        <p>
-            Wet Lab Fake Paragraph 2 - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-    magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-    </div>
-
-    <div class="productTeam hide">
-        <p>
-            Product Development Fake Paragraph 1 - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-    magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-
-        <p>
-            Product Development Fake Paragraph 2 -Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-    magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-    </div>
-
-    <div class="policyTeam hide">
-        <p>
-            Policy and Practice Fake Paragraph 1 - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-    magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-
-        <p>
-            Policy and Practices Fake Paragraph 2 - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-    magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-    </div>
+		</ul>
+		</div>
 
 
-    <div class="businessTeam hide">
-        <p>
-            Business Team Fake Paragraph 1 - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-    magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
 
-        <p>
-            Business Team Fake Paragraph 2 - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-    magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-    </div>
+		<!--/****************************** GIANT JAMBOREE *****************************************/ -->
 
-    <div class="wikiTeam hide">
-        <p>
-            Wiki Team Fake Paragraph 1 - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-    magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
 
-        <p>
-            Wiki Team Fake Paragraph 2 - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-    magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-    </div>
+		<div class="container jamboree">
+		  <h1>
+		    iGEM Giant Jamboree </h1>
+		    <div class="currentWorkItems">
+		      <div class="currentWorkImg">
+		        <img src="images/content/synbio.jpg" alt="Synthetic Biology" width="500">
+		      </div>
+		    <div class="currentWorkText">
+		    <p>
+					The Giant Jamboree is the annual competition hosted by the iGEM foundation during which hundreds of teams from around the globe gather to present their projects, network with other teams and companies, and learn more about the field of synthetic biology. It is made up of multiple different events spanning the course of four days. Everything is bookended by the opening and closing ceremonies. In between these ceremonies, some activities you might find are project presentation sessions, poster sessions and workshops, along with other special events such as a career fair or a start-up showcase. In addition to participating in these activities and speaking with other teams, you also get the chance to meet representatives from sponsor companies and talk with them as well.
+</p>
+<p>
+					The Giant Jamboree means a lot to Cornell iGEM, but not just for the reason that it’s our chance to show off our impressive work that we do annually. The Giant Jamboree is also a tremendous opportunity for team bonding and camaraderie. Each year after the Giant Jamboree ends and Cornell iGEM members head back from Boston to Ithaca, everyone leaves feeling as if they’ve gotten closer to the people around them. With the Giant Jamboree being virtual this year, we’re all very disappointed that we won’t have this opportunity to bond with each other. However, we’re still doing all that we can to ensure that Cornell iGEM is a safe place in which every member feels a sense of belonging.
 
-</div>
-<script>
-    function selectSubteam(teamName, element){
-        document.getElementsByClassName("wetLabTeam")[0].classList.add("hide");
-        document.getElementsByClassName("productTeam")[0].classList.add("hide");
-        document.getElementsByClassName("policyTeam")[0].classList.add("hide");
-        document.getElementsByClassName("businessTeam")[0].classList.add("hide");
-        document.getElementsByClassName("wikiTeam")[0].classList.add("hide");
-        document.getElementsByClassName(teamName)[0].classList.remove("hide");
+		</p>
+		</div>
+		</div>
+		</div>
 
-        var navItems = document.getElementById("subteamNav").getElementsByTagName("li");
-        for (var i = 0; i<navItems.length; i++){
-            navItems[i].classList.remove("active");
-        }
-        element.classList.add("active");
-    }
-</script>
+		<!--/****************************** MEET THE SUBTEAMS *****************************************/ -->
 
-    <!--/*****------------------------------*** FOOTER ***------------------------------*****/ -->
+		<div class="container subteams">
+		    <h1>Meet Our Subteams</h1>
+		    <ul id="subteamNav" class="nav nav-justified">
+		        <li onclick="selectSubteam('wetLabTeam', this)" class="active"><a>Wet Lab</a></li>
+		        <li onclick="selectSubteam('productTeam', this)"><a>Product Development</a></li>
+		        <li onclick="selectSubteam('policyTeam', this)"><a>Policy and Practices</a></li>
+		        <li onclick="selectSubteam('businessTeam', this)"><a>Business</a></li>
+		        <li onclick="selectSubteam('wikiTeam', this)"><a>Wiki</a></li>
+		    </ul>
 
-      <div class="footer">
-  	<div class="container">
-  		<ul class='contact-us'>
-  			<li>
-  				<img src="images/footer/em.png" alt="email">
-  				<a href="mailto:cornelligem@gmail.com">cornelligem@gmail.com</a>
-  			</li>
-  			<li>
-  				<img src="images/footer/fb.png" alt="facebook">
-  				<a href="http://facebook.com/cornelligem">facebook.com/cornelligem</a>
-  			</li>
-  			<li>
-  				<img src="images/footer/tw.png" alt="twitter">
-  				<a href="http://twitter.com/cugem">@CUGEM</a>
-  			</li>
-  			<li>
-  				<img src="images/footer/instagram.png" alt="instagram">
-  				<a href="https://www.instagram.com/cugem/">@CUGEM</a>
-  			</li>
-  		</ul>
-  	</div>
-          <div class='credit'>
-              <p>© Cornell iGEM | Created By: Karen Zhan, Anish Navada | Built upon the work of: Tennyson Bardwell, Rishabh Singh, Amanda Ong</p>
-          </div>
-      </div>
+		    <div class="wetLabTeam">
+		        <p>
+							Wet Lab designs and creates all biological products for Cornell iGEM through genetic circuit design
+							and synthetic biology lab techniques. Through cloning and transformation, we genetically engineer
+							bacteria to produce proteins, nature’s most versatile machinery.
+		        </p>
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+		        <p>
+							Due to the coronavirus and lab closures, this year we are modeling our bacterial therapy project
+							remotely. Using previous literature and mathematical models for gene expression, bacterial growth,
+							and cancer microenvironments, we are evaluating the safety and efficacy of the bacteria portion of
+							our breast cancer therapy.
+		        </p>
+		    </div>
+
+		    <div class="productTeam hide">
+		        <p>
+							The product development subteam is an engineering-focused, user-centered, end-to-end development team. Our end goal is to bring Cornell iGEM’s biological innovation to the real world. We apply design thinking and various engineering disciplines to explore user needs, generate a problem statement, design and prototype a solution to the problem, and create product specifications to prepare for manufacturing.
+						</p>
+						<p>
+							In previous years, the product development subteam has built a boat with an automatic sampling system (2019), a bioreactor (2019), planter cups that monitor and adjust oxidative conditions for the plant (2018), software that displays information about a hydroponics system in real-time to a dashboard and alerts farmers (2018), a customizable milking shell that prevents bovine mastitis (2017), an app with a built-in cell counter that also tracks trends in cow health (2017), and many more. This year, the product development team designed a hand-held fluorescence scanner to detect tumors after the person has been initially treated (see wetlab).
+		        </p>
+		    </div>
+
+		    <div class="policyTeam hide">
+		        <p>
+							Policy and Practices analyzes legislation and speaks with researchers, industry professionals and the
+							general public to contextualize and understand the impact of our projects. The subteam also coordinates
+							outreach events such as youth mentorship programs, forums, and expos to inform and educate the public about
+							the field of synthetic biology.
+
+
+		        <p>
+							Through interviews with field experts and interactions with the public, we are reminded that the people we
+							meet always have stories to tell. We aim to share our story with them, too.
+		        </p>
+		    </div>
+
+
+		    <div class="businessTeam hide">
+		        <p>
+							The Business Subteam deals with Cornell iGEM’s finances, budgeting, recruiting and media material.
+							We maintain an active and communicative relationship with our school and sponsors year round. We also
+							work with the Policy and Practices subteam to spread awareness about synthetic biology @ Cornell both
+							on- and off-campus through social media and hosting special events such as fundraisers and school seminars.
+							In recent years, the Business Subteam has been trying to facilitate a team-wide transition from a
+							competition-based organization to a truly independent synbio developer and thinktank. We hope to further
+							mature past projects from proofs-of-concept to significant marketable products by collaborating with prominent
+							biotech and biochemical companies.
+		        </p>
+
+		    </div>
+
+		    <div class="wikiTeam hide">
+		        <p>
+		          The Wiki subteam is mainly in charge of the competition website each year that showcases our project. From
+							design to implementation, we do it all! During the spring semesters, we hold design and development training
+							that spans visual design, HTML, CSS, and JavaScript. During this training, there are weekly/bi-weekly lessons
+							and projects to go along with thme. Over the summer, we create the design for our competition website over several iterations,
+							and implement it in the fall!
+		        </p>
+
+		        <p>
+							Additionally, wiki is also in charge of maintaining and updating our project team website. From design updates to photos
+							to adding members, we take care of everything web related for the team!
+		        </p>
+		    </div>
+
+		</div>
+		<script>
+		    function selectSubteam(teamName, element){
+		        document.getElementsByClassName("wetLabTeam")[0].classList.add("hide");
+		        document.getElementsByClassName("productTeam")[0].classList.add("hide");
+		        document.getElementsByClassName("policyTeam")[0].classList.add("hide");
+		        document.getElementsByClassName("businessTeam")[0].classList.add("hide");
+		        document.getElementsByClassName("wikiTeam")[0].classList.add("hide");
+		        document.getElementsByClassName(teamName)[0].classList.remove("hide");
+
+		        var navItems = document.getElementById("subteamNav").getElementsByTagName("li");
+		        for (var i = 0; i<navItems.length; i++){
+		            navItems[i].classList.remove("active");
+		        }
+		        element.classList.add("active");
+		    }
+		</script>
+
+
+
+
+
+
+
+
+    <!--/************************* FOOTER ************************************/ -->
+
+    <footer class="footer-distributed">
+
+    			<div class="footer-left">
+              <img src="images/logo/logo.png" width="200" alt="logo">
+
+    				<p class="footer-links">
+    					<a href="index.html">Home</a>
+    					|
+    					<a href="about.html">About</a>
+    					|
+    					<a href="team.html">Team</a>
+    					|
+    					<a href="apply.html">Apply</a>
+    				</p>
+
+    				<p class="footer-company-name">© 2020 Cornell iGEM</p>
+    			</div>
+
+    			<div class="footer-center">
+    				<div>
+    					<i class="fa fa-map-marker"></i>
+    					  <p><span>Cornell University
+    						 </span>
+    						Ithaca, New York - 14853</p>
+    				</div>
+
+    				<div>
+    					<i class="fa fa-envelope"></i>
+    					<p><a href="mailto:cornelligem@gmail.com">cornelligem@gmail.com</a></p>
+    				</div>
+    			</div>
+    			<div class="footer-right">
+    				<p class="footer-company-about">
+    					Designed and created by Karen Zhan and Anish Navada | Built upon the work of Tennyson Bardwell, Rishabh Singh, Amanda Ong</p>
+    				<div class="footer-icons">
+    					<a href="https://facebook.com/cornelligem"><i class="fa fa-facebook"></i></a>
+    					<a href="https://twitter.com/cugem"><i class="fa fa-twitter"></i></a>
+    					<a href="https://www.instagram.com/cugem/"><i class="fa fa-instagram"></i></a>
+    					<a href="https://www.linkedin.com/company/cornell-igem"><i class="fa fa-linkedin"></i></a>
+    					<a href="https://www.youtube.com/user/CornelliGEM/"><i class="fa fa-youtube"></i></a>
+    				</div>
+    			</div>
+    		</footer>
+
+
+
+
+
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 	<script src="js/script.js"></script>
 	<script src="http://www.youtube.com/iframe_api"></script>

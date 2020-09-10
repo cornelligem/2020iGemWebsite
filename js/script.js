@@ -1,3 +1,13 @@
+let mainNav = document.getElementById('js-menu');
+let navBarToggle = document.getElementById('js-navbar-toggle');
+
+navBarToggle.addEventListener('click', function () {
+  mainNav.classList.toggle('activenav');
+});
+
+
+
+
 var slideIndex = 1;
 showSlides(slideIndex);
 
@@ -30,6 +40,9 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 
 }
+
+
+
 
 // From Past Website
 
@@ -77,3 +90,15 @@ function checkVisible( elm, evalType ) {
     if (evalType === "visible") return ((y < (vpH + st)) && (y > (st - elementHeight)));
     if (evalType === "above") return ((y < (vpH + st)));
 }
+
+$(window).load(function () {
+    $(".trigger_popup_fricc").click(function(){
+       $('.hover_bkgr_fricc').show();
+    });
+    $('.hover_bkgr_fricc').click(function(){
+        $('.hover_bkgr_fricc').hide();
+    });
+    $('.popupCloseButton').click(function(){
+        $('.hover_bkgr_fricc').hide();
+    });
+});
