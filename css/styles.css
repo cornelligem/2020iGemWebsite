@@ -915,6 +915,72 @@ a {
   padding-top: 50px;
 }
 
+.giantJamboree {
+  display: inline-block;
+}
+
+/* on PC */
+@media screen and (min-width: 768px) {
+  .jamboreeImg1 {
+    float: left;
+    width: 37%;
+    padding-left: 10%;
+    padding-top: 30px;
+  }
+
+  .jamboreeImg1 img{
+    width: 100%;
+  }
+
+  .jamboreeText1 {
+    float: left;
+    width: 63%;
+    padding-right: 10%;
+    padding-left: 2.5%;
+    padding-top: 30px;
+    padding-bottom: 50px;
+  }
+}
+  .jamboreeImg2 {
+    float: right;
+    width: 37%;
+  }
+
+  .jamboreeImg2 img{
+    width: 100%;
+  }
+
+  .jamboreeText2 {
+    float: left;
+    width: 63%;
+  }
+/* on Mobile */
+@media screen and (max-width: 768px) {
+  .jamboreeImg1 .jamboreeImg2 {
+    width: 90%;
+  }
+  .jamboreeImg1 .jamboreeImg2 img {
+    width: 100%;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-top: 20px;
+  }
+  .jamboreeText2 .jamboreeText2 {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-top: 20px;
+    padding-bottom: 50px;
+  }
+
+  .jamboree h1 {
+    padding-left: 5%;
+  }
+}
+
+
+
+
 .subteams .nav{
   margin-top: 40px;
 }
