@@ -85,21 +85,23 @@
 
 		<!-- Meet the SubTeams -->
 		<div class="subteams">
-		    <ul id="subteamNav" class="nav nav-justified">
-		        <li onclick="selectSubteam('general', this)" class="active"><a>General</a></li>
-		        <li onclick="selectSubteam('wetLabTeam', this)"><a>Wet Lab</a></li>
-		        <li onclick="selectSubteam('productTeam', this)"><a>Product Development</a></li>
-		        <li onclick="selectSubteam('policyTeam', this)"><a>Policy and Practices</a></li>
-		        <li onclick="selectSubteam('businessTeam', this)"><a>Business</a></li>
-		        <li onclick="selectSubteam('wikiTeam', this)"><a>Wiki</a></li>
-		    </ul>
+			
+			<p>
+				Here is your chance to really stand out from other applicants by showing us your skills, talent, potential, and personality. So write away, keep it interesting, and impress us! Links to past projects can be found on our website: https://igem.engineering.cornell.edu
+			</p>
+
+			<ul id="applyNav" class="nav">
+				<li onclick="selectSubteam('general', this)" class="nav-item active"><a class="nav-link">General</a></li>
+				<li onclick="selectSubteam('wetLabTeam', this)" class="nav-item"><a class="nav-link">Wet Lab</a></li>
+				<li onclick="selectSubteam('productTeam', this)" class="nav-item"><a class="nav-link">Product Development</a></li>
+				<li onclick="selectSubteam('policyTeam', this)" class="nav-item"><a class="nav-link">Policy and Practices</a></li>
+				<li onclick="selectSubteam('businessTeam', this)" class="nav-item"><a class="nav-link">Business</a></li>
+				<li onclick="selectSubteam('wikiTeam', this)" class="nav-item"><a class="nav-link">Wiki</a></li>
+			</ul>
 
 		    <div class="general">
-		        <p>
-		            General Short Answer Prompts:
-		        </p>
-		        <p>
-		            Here is your chance to really stand out from other applicants by showing us your skills, talent, potential, and personality. So write away, keep it interesting, and impress us! Links to past projects can be found on our website: https://igem.engineering.cornell.edu
+		        <p class="applyPrompts">
+		            General Short Answer Prompts
 		        </p>
 		            Taking past iGEM projects into consideration, explain (1) why you are a good fit for this team, and (2) why iGEM is a good fit for you. [400 Word Limit]
 		        <p>
@@ -108,11 +110,8 @@
 		    </div>
 
 		    <div class="wetLabTeam hide">
-		        <p>
-		            Wet Lab Short Answer Prompts:
-		        </p>
-		        <p>
-		            Here is your chance to really stand out from other applicants by showing us your skills, talent, potential, and personality. So write away, keep it interesting, and impress us! Links to past projects can be found on our website: https://igem.engineering.cornell.edu
+		        <p class="applyPrompts">
+		            Wet Lab Short Answer Prompts
 		        </p>
 		            Taking past iGEM projects into consideration, explain (1) why you are a good fit for this team, and (2) why iGEM is a good fit for you. [400 Word Limit]
 		        <p>
@@ -121,11 +120,8 @@
 		    </div>
 
 		    <div class="productTeam hide">
-		        <p>
-		            Product Development Short Answer Prompts:
-		        </p>
-		        <p>
-		            Here is your chance to really stand out from other applicants by showing us your skills, talent, potential, and personality. So write away, keep it interesting, and impress us! Links to past projects can be found on our website: https://igem.engineering.cornell.edu
+		        <p class="applyPrompts">
+		            Product Development Short Answer Prompts
 		        </p>
 		            Taking past iGEM projects into consideration, explain (1) why you are a good fit for this team, and (2) why iGEM is a good fit for you. [400 Word Limit]
 		        <p>
@@ -134,11 +130,8 @@
 		    </div>
 
 		    <div class="policyTeam hide">
-		        <p>
-		            Policy and Practices Short Answer Prompts:
-		        </p>
-		        <p>
-		            Here is your chance to really stand out from other applicants by showing us your skills, talent, potential, and personality. So write away, keep it interesting, and impress us! Links to past projects can be found on our website: https://igem.engineering.cornell.edu
+		        <p class="applyPrompts">
+		            Policy and Practices Short Answer Prompts
 		        </p>
 		            Taking past iGEM projects into consideration, explain (1) why you are a good fit for this team, and (2) why iGEM is a good fit for you. [400 Word Limit]
 		        <p>
@@ -148,11 +141,8 @@
 
 
 		    <div class="businessTeam hide">
-		        <p>
-		            Business Short Answer Prompts:
-		        </p>
-		        <p>
-		            Here is your chance to really stand out from other applicants by showing us your skills, talent, potential, and personality. So write away, keep it interesting, and impress us! Links to past projects can be found on our website: https://igem.engineering.cornell.edu
+		        <p class="applyPrompts">
+		            Business Short Answer Prompts
 		        </p>
 		            Taking past iGEM projects into consideration, explain (1) why you are a good fit for this team, and (2) why iGEM is a good fit for you. [400 Word Limit]
 		        <p>
@@ -161,11 +151,8 @@
 		    </div>
 
 		    <div class="wikiTeam hide">
-		        <p>
-		            Wiki Short Answer Prompts:
-		        </p>
-		        <p>
-		            Here is your chance to really stand out from other applicants by showing us your skills, talent, potential, and personality. So write away, keep it interesting, and impress us! Links to past projects can be found on our website: https://igem.engineering.cornell.edu
+		        <p class="applyPrompts">
+		            Wiki Short Answer Prompts
 		        </p>
 		            Taking past iGEM projects into consideration, explain (1) why you are a good fit for this team, and (2) why iGEM is a good fit for you. [400 Word Limit]
 		        <p>
@@ -184,7 +171,7 @@
 		        document.getElementsByClassName("wikiTeam")[0].classList.add("hide");
 		        document.getElementsByClassName(teamName)[0].classList.remove("hide");
 
-		        var navItems = document.getElementById("subteamNav").getElementsByTagName("li");
+		        var navItems = document.getElementById("applyNav").getElementsByTagName("li");
 		        for (var i = 0; i<navItems.length; i++){
 		            navItems[i].classList.remove("active");
 		        }
