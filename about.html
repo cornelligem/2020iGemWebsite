@@ -141,13 +141,13 @@
 
 		<div class="container subteams">
 		    <h1>Meet Our Subteams</h1>
-		    <ul id="subteamNav" class="nav nav-justified">
-		        <li onclick="selectSubteam('wetLabTeam', this)" class="active"><a>Wet Lab</a></li>
-		        <li onclick="selectSubteam('productTeam', this)"><a>Product Development</a></li>
-		        <li onclick="selectSubteam('policyTeam', this)"><a>Policy and Practices</a></li>
-		        <li onclick="selectSubteam('businessTeam', this)"><a>Business</a></li>
-		        <li onclick="selectSubteam('wikiTeam', this)"><a>Wiki</a></li>
-		    </ul>
+		    <ul id="aboutNav" class="nav">
+				<li onclick="selectSubteam('wetLabTeam', this)" class="nav-item active"><a class="nav-link">Wet Lab</a></li>
+				<li onclick="selectSubteam('productTeam', this)" class="nav-item"><a class="nav-link">Product Development</a></li>
+				<li onclick="selectSubteam('policyTeam', this)" class="nav-item"><a class="nav-link">Policy and Practices</a></li>
+				<li onclick="selectSubteam('businessTeam', this)" class="nav-item"><a class="nav-link">Business</a></li>
+				<li onclick="selectSubteam('wikiTeam', this)" class="nav-item"><a class="nav-link">Wiki</a></li>
+			</ul>
 
 		    <div class="wetLabTeam">
 		        <p>
@@ -227,7 +227,7 @@
 		        document.getElementsByClassName("wikiTeam")[0].classList.add("hide");
 		        document.getElementsByClassName(teamName)[0].classList.remove("hide");
 
-		        var navItems = document.getElementById("subteamNav").getElementsByTagName("li");
+		        var navItems = document.getElementById("aboutNav").getElementsByTagName("li");
 		        for (var i = 0; i<navItems.length; i++){
 		            navItems[i].classList.remove("active");
 		        }

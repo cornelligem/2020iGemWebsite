@@ -985,9 +985,21 @@ a {
   margin-top: 40px;
 }
 
-.subteams .active{
-text-decoration: underline;
-background-color: #fff;
+#aboutNav{
+  margin-bottom: 40px;
+}
+
+#aboutNav .active{
+  border-radius: 25px; 
+  background-color: #F5F5F5;
+}
+
+#aboutNav .active a{
+  color: #607D8B; 
+}
+
+#aboutNav a{
+  color: #333333;
 }
 
 .subteams p{
@@ -1130,13 +1142,35 @@ section .section-title {
     border-radius: 50%;
 }
 
+.hide{
+  display: none; 
+}
 
+#subteamNav{
+  margin-bottom: 40px;
+}
 
+#subteamNav .active{
+  border-radius: 25px; 
+  background-color: #ffffff; 
+}
 
+#subteamNav .active a{
+  color: #607D8B; 
+}
+
+#subteamNav a{
+  color: #333333;
+}
 
 
 
 /*******************APPLY**********************/
+
+.subteams{
+  padding: 50px 100px;
+	margin-top: 40px;
+}
 
 .applyInfo{
 	padding: 50px 100px;
@@ -1159,3 +1193,26 @@ section .section-title {
   .schedule{
 	padding: 0px 350px;
   }
+
+  
+#applyNav{
+  margin-bottom: 40px;
+}
+
+#applyNav .active{
+  border-radius: 25px; 
+  background-color: #F5F5F5;
+}
+
+#applyNav .active a{
+  color: #607D8B; 
+}
+
+#applyNav a{
+  color: #333333;
+}
+
+.applyPrompts{
+  text-decoration: underline;
+}
+
