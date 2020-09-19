@@ -287,7 +287,7 @@ a {
     float: left;
     width: 37%;
     padding-left: 10%;
-    padding-top: 30px;
+    padding-top: 9%;
   }
   .currentWorkImg img {
     width: 100%;
@@ -923,9 +923,8 @@ a {
 @media screen and (min-width: 768px) {
   .jamboreeImg1 {
     float: left;
-    width: 37%;
-    padding-left: 10%;
-    padding-top: 30px;
+    width: 40%;
+    padding-top: 35px;
   }
 
   .jamboreeImg1 img{
@@ -934,8 +933,7 @@ a {
 
   .jamboreeText1 {
     float: left;
-    width: 63%;
-    padding-right: 10%;
+    width: 60%;
     padding-left: 2.5%;
     padding-top: 30px;
     padding-bottom: 50px;
@@ -943,7 +941,7 @@ a {
 }
   .jamboreeImg2 {
     float: right;
-    width: 37%;
+    width: 45%;
   }
 
   .jamboreeImg2 img{
@@ -952,7 +950,8 @@ a {
 
   .jamboreeText2 {
     float: left;
-    width: 63%;
+    width: 55%;
+    padding-right: 2.5%;
   }
 /* on Mobile */
 @media screen and (max-width: 768px) {
@@ -990,12 +989,12 @@ a {
 }
 
 #aboutNav .active{
-  border-radius: 25px; 
+  border-radius: 25px;
   background-color: #F5F5F5;
 }
 
 #aboutNav .active a{
-  color: #607D8B; 
+  color: #607D8B;
 }
 
 #aboutNav a{
@@ -1015,22 +1014,31 @@ a {
 
 /*******************TEAM**********************/
 
+.teamLead {
+  width: 400px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 50px;
+}
+
 #team {
     background: #eee !important;
+    margin-top: -100px;
 }
 
 .btn-primary:hover,
 .btn-primary:focus {
-    background-color: #108d6f;
-    border-color: #108d6f;
+    background-color: #607D8B;
+    border-color: #607D8B;
     box-shadow: none;
     outline: none;
 }
 
 .btn-primary {
     color: #fff;
-    background-color: #007b5e;
-    border-color: #007b5e;
+    background-color: #607D8B;
+    border-color: #607D8B;
 }
 
 section {
@@ -1039,7 +1047,7 @@ section {
 
 section .section-title {
     text-align: center;
-    color: #007b5e;
+    color: #607D8B;
     margin-bottom: 50px;
     text-transform: uppercase;
 }
@@ -1128,22 +1136,20 @@ section .section-title {
 
 .backside .card a {
     font-size: 18px;
-    color: #007b5e !important;
+    color: #607D8B !important;
 }
 
 .frontside .card .card-title,
 .backside .card .card-title {
-    color: #007b5e !important;
+    color: #607D8B !important;
 }
 
 .frontside .card .card-body img {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
+    width: 175px;
 }
 
 .hide{
-  display: none; 
+  display: none;
 }
 
 #subteamNav{
@@ -1151,12 +1157,12 @@ section .section-title {
 }
 
 #subteamNav .active{
-  border-radius: 25px; 
-  background-color: #ffffff; 
+  border-radius: 25px;
+  background-color: #ffffff;
 }
 
 #subteamNav .active a{
-  color: #607D8B; 
+  color: #607D8B;
 }
 
 #subteamNav a{
@@ -1167,52 +1173,33 @@ section .section-title {
 
 /*******************APPLY**********************/
 
-.subteams{
-  padding: 50px 100px;
-	margin-top: 40px;
+.applyHeader {
+  margin-top: 100px;
 }
 
-.applyInfo{
-	padding: 50px 100px;
-	margin-top: 40px;
-  }
+.schedule {
+  padding-left: 35px;
+}
 
-  .applyInfo .teamInfo{
-	  font-size: 24px;
-	  margin-bottom: 40px;
-  }
+.currentRecruitment {
+  font-size: 20px;
+  padding-bottom: 50px;
+  padding-top: 12px;
+}
 
-  .applyInfo .recruit{
-	  margin-bottom: 40px;
-  }
-
-  .applyInfo .lastline{
-	  margin-bottom: -90px;
-  }
-
-  .schedule{
-	padding: 0px 350px;
-  }
-
-  
 #applyNav{
   margin-bottom: 40px;
 }
 
 #applyNav .active{
-  border-radius: 25px; 
+  border-radius: 25px;
   background-color: #F5F5F5;
 }
 
 #applyNav .active a{
-  color: #607D8B; 
+  color: #607D8B;
 }
 
 #applyNav a{
   color: #333333;
 }
-
-.applyPrompts{
-  text-decoration: underline;
-}
-
