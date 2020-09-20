@@ -649,7 +649,17 @@ a {
   margin-left: 80%;
 }
 
-
+@media screen and (max-width: 800px) {
+  .btn-secondary {
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+  }
+  .buttonDiv {
+    display: flex;
+    justify-content: center;
+  }
+}
 
 /***************** Sponsors **********************/
 
