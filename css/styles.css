@@ -188,6 +188,10 @@ a {
           display: none;
         }
 
+        .slidesauto {
+          display: none;
+        }
+
         /* Next & previous buttons */
         .prev, .next {
           cursor: pointer;
@@ -999,6 +1003,7 @@ a {
 
 #aboutNav a{
   color: #333333;
+  cursor: pointer;
 }
 
 .subteams p{
@@ -1055,6 +1060,10 @@ section .section-title {
 #team .card {
     border: none;
     background: #ffffff;
+}
+
+.card-text {
+  font-size: 14px;
 }
 
 .image-flip:hover .backside,
@@ -1131,7 +1140,8 @@ section .section-title {
 
 .frontside .card,
 .backside .card {
-    min-height: 312px;
+    min-height: 400px;
+    max-height: 400px;
 }
 
 .backside .card a {
@@ -1146,6 +1156,7 @@ section .section-title {
 
 .frontside .card .card-body img {
     width: 175px;
+    padding-top: 20px;
 }
 
 .hide{
@@ -1167,6 +1178,7 @@ section .section-title {
 
 #subteamNav a{
   color: #333333;
+  cursor: pointer;
 }
 
 
@@ -1202,4 +1214,5 @@ section .section-title {
 
 #applyNav a{
   color: #333333;
+  cursor: pointer;
 }

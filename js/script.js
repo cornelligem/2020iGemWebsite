@@ -42,8 +42,6 @@ function showSlides(n) {
 }
 
 
-
-
 // From Past Website
 
 function applyCSSTweeks() {
