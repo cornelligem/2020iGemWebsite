@@ -1181,7 +1181,69 @@ section .section-title {
   cursor: pointer;
 }
 
+/** Alumni **/
 
+@media screen and (min-width: 768px) {
+
+.alumni {
+  padding-bottom: 180px;
+}
+
+.alumni h1 {
+  padding-top: 50px;
+}
+
+.alumni p {
+  padding-top: 35px;
+}
+
+.firstAlumList {
+  display: inline-block;
+  float: left;
+  padding-left: 300px;
+  padding-top: 25px;
+}
+
+.firstAlumList li {
+  list-style: none;
+  padding-top: 3px;
+}
+
+.secondAlumList {
+  display: inline-block;
+  float: right;
+  padding-right: 150px;
+  padding-top: 25px;
+}
+
+.secondAlumList li {
+  list-style: none;
+  padding-top: 3px;
+}
+}
+
+@media screen and (max-width: 768px) {
+
+  .alumni h1 {
+    padding-top: 50px;
+  }
+
+  .alumni p {
+    padding-top: 35px;
+  }
+
+  .firstAlumList li {
+    list-style: none;
+    padding-top: 3px;
+  }
+
+  .secondAlumList li {
+    list-style: none;
+    padding-top: 3px;
+  }
+  }
+
+}
 
 /*******************APPLY**********************/
 
