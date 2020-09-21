@@ -10,7 +10,6 @@
 
 h1 {
 	font-family: 'Raleway';
-  font-weight: bold;
   font-size: 35px;
 }
 
@@ -729,7 +728,6 @@ a {
 
 
         footer{
-        	position: fixed;
         	bottom: 0;
         }
 
@@ -744,7 +742,7 @@ a {
         	width: 100%;
         	text-align: left;
           font-family: 'Raleway';
-        	font: bold 16px sans-serif;
+        	font: 16px sans-serif;
         	padding: 50px 50px 60px 50px;
         	margin-top: 80px;
         }
@@ -858,7 +856,6 @@ a {
         	display: block;
         	color:  #ffffff;
         	font-size: 18px;
-        	font-weight: bold;
         	margin-bottom: 20px;
         }
 
