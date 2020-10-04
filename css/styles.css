@@ -1250,7 +1250,7 @@ section .section-title {
   }
   }
 
-}
+
 
 /*******************APPLY**********************/
 
@@ -1284,4 +1284,8 @@ section .section-title {
 #applyNav a{
   color: #333333;
   cursor: pointer;
+}
+
+.apply-button {
+  text-align: center;
 }
