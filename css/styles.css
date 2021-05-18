@@ -1207,7 +1207,7 @@ section .section-title {
 .firstAlumList {
   display: inline-block;
   float: left;
-  padding-left: 300px;
+  padding-left: 200px;
   padding-top: 25px;
 }
 
@@ -1219,7 +1219,7 @@ section .section-title {
 .secondAlumList {
   display: inline-block;
   float: right;
-  padding-right: 150px;
+  padding-right: 100px;
   padding-top: 25px;
 }
 
